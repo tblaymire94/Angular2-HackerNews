@@ -25,7 +25,8 @@ import { CommentComponent } from './comment/comment.component';
     ItemComponent,
     ItemCommentsComponent,
     CommentTreeComponent,
-    CommentComponent
+    CommentComponent,
+    CommentTreeComponent
   ],
   imports: [
     BrowserModule,

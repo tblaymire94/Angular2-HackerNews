@@ -15,14 +15,14 @@ export class ItemCommentsComponent implements OnInit {
   constructor(
     private _hackerNewsAPIService: HackerNewsAPIService,
     private route: ActivatedRoute
-  ) { }
+  ) {}
 
-  ngOnInit() {
+  ngOnInit() {    
     this.sub = this.route.params.subscribe(params => {
       let itemID = +params['id'];
       this._hackerNewsAPIService.fetchComments(itemID).subscribe(data => {
         this.item = data;
-    }), error => console.log('Could not load item' + itemID));
+      }, error => console.log('Could not load item' + itemID));
     });
   }
 }
