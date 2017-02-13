@@ -9,6 +9,8 @@ import { StoriesComponent } from './stories/stories.component';
 import { FooterComponent } from './footer/footer.component';
 import { ItemComponent } from './item/item.component';
 
+import { routing } from './app.routes';
+
 import { HackerNewsAPIService } from './hackernews-api.service';
 import { ItemCommentsComponent } from './item-comments/item-comments.component';
 
@@ -24,7 +26,8 @@ import { ItemCommentsComponent } from './item-comments/item-comments.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
   providers: [HackerNewsAPIService],
   bootstrap: [AppComponent]
